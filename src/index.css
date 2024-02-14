@@ -1,0 +1,90 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(208, 17%, 30%);
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.dashboard{
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 2%, 47%);
+  border: none;
+  margin-top: 100px;
+  border-radius: 50px;
+  box-shadow: -8px -7px 26px -3px rgba(51, 49, 49, 0.75);
+  color: hsl(210, 40%, 18%);
+  padding: 20px;
+}
+.nameDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.tempDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature{
+  font-size: 60px;
+  color: hsl(219, 50%, 10%);
+}
+.weather{
+  margin: 0;
+}
+.extrasDiv{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.weather-image{
+  border: none;
+  border-radius: 10px;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.text-box{
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  background-color: hsl(208, 17%, 30%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+.text-box:focus{
+  outline: none;
+  background-color: hsl(0, 0%, 26%);
+  color: white;
+  text-align: center;
+  caret-color: white;
+}
+.text-box::placeholder{
+  color: rgb(151, 147, 147);
+  text-align: center;
+}
+.search-button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(0, 2%, 22%);
+  color: rgb(151, 147, 147);
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.search-button:hover{
+  cursor: pointer;
+}
