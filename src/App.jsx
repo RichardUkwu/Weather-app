@@ -1,5 +1,10 @@
+import WeatherDashboard from "./WeatherDashboard";
 function App() {
-  return <></>;
+  return (
+    <>
+      <WeatherDashboard />
+    </>
+  );
 }
 
 export default App;
