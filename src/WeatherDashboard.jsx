@@ -10,14 +10,16 @@ function WeatherDashboard(){
   const [visibility, setVisibility] = useState('0');
   const [cityLat, setCityLat] = useState();
   const [cityLong, setCityLong] = useState();
-  const [weatherIcon, setWeatherIcon] = useState('')
-  const [hasChanged, sethasChanged] = useState(false)
+  const [weatherIcon, setWeatherIcon] = useState('');
+  const [hasChanged, sethasChanged] = useState(false);
+  
   useEffect(() => {
     if(hasChanged == true){
       const convertCityCord = async() => {
         try{
           const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=27a74a541fe845c698c8be6a8d9396c6`);
           if(!response.ok){
+            setCityName("Not Found")
             throw new Error("could not fetch data")
           }
           const cityData = await response.json();
