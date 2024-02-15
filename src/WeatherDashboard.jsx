@@ -10,8 +10,8 @@ function WeatherDashboard(){
   const [visibility, setVisibility] = useState('0');
   const [cityLat, setCityLat] = useState();
   const [cityLong, setCityLong] = useState();
-  const [weatherIcon, setWeatherIcon] = useState('')
-  const [hasChanged, sethasChanged] = useState(false)
+  const [weatherIcon, setWeatherIcon] = useState('');
+  const [hasChanged, sethasChanged] = useState(false);
   useEffect(() => {
     if(hasChanged == true){
       const convertCityCord = async() => {
